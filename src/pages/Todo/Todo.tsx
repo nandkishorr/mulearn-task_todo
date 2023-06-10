@@ -70,7 +70,8 @@ const Todo = ({ handleLogout }: TodoProps) => {
 
   return (
     <div className="todo-container container-fluid">
-     <div className='logout'><AiOutlinePoweroff  size='2em' onClick={handleLogout}/></div>
+
+      <div className='container-top'>     <div className='logout'><AiOutlinePoweroff  size='2em' onClick={handleLogout}/></div>
      <div className='d-flex todo-top'> 
      <h2 className='todo-heading '>ToDos</h2><BsCheck2Circle/></div>
      
@@ -99,7 +100,7 @@ const Todo = ({ handleLogout }: TodoProps) => {
           <AiOutlineFolderAdd size='30px' color='white' cursor='pointer' onClick={addTodo}/>
           </>
         )}
-      </div>
+      </div></div>
       <div className="todo-main d-flex">
         <ul className='todo-list'>
         {todos.map((todo) => (

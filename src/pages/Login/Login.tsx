@@ -19,7 +19,11 @@ const Login = ({ handleLogin, loggedIn }: Props) => {
   }
 
   if (loggedIn) {
-    return <p>You are already logged in!</p>;
+    navigate('/todos');
+    alert("You have already logged in")
+  }
+  else{
+    navigate('/login');
   }
 
   return (
